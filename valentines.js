@@ -40,12 +40,12 @@ noBtn.addEventListener("click", () => {
 });
 
 function resizeYesButton() {
-  yesButtonSize *= 1.2;
+  yesButtonSize *= 1.9;
   yesBtn.style.transform = `scale(${yesButtonSize})`;
 }
 
 function shrinkNoButton() {
-  noButtonSize *= 1.6;
+  noButtonSize *= 0.9;
   noBtn.style.transform = `scale(${noButtonSize})`;
 }
 
@@ -74,4 +74,5 @@ function changeImage(image) {
 
 function updateNoButtonText() {
   noBtn.innerHTML = generateMessage(noCount);
+
 }
